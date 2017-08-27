@@ -1,0 +1,73 @@
+.menu{
+    background: url("../img/content/bg/menu_bg.jpg") 50% no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.menu-acco{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+
+    @extend %clearfix;
+}
+
+.menu-acco__item{
+    float: left;
+    height: 100%;
+
+    @extend %clearfix;
+
+    &_active{
+        .menu-acco__trigger-text{
+            color: $yellow;
+        }
+        .menu-acco__content{
+            // width: 550px;
+        }
+    }
+}
+
+.menu-acco__trigger{
+    height: 100%;
+    display: block;
+    width: 80px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    float: left;
+}
+
+.menu-acco__trigger-text{
+    font-family: 'gagalinregular';
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    height: 80px;
+    margin-top: -40px;
+    white-space: nowrap;
+    width: 650px;
+    color: white;
+    left: 50%;
+    margin-left: -315px;
+    transform: rotate(-90deg);
+    text-align: center;
+}
+
+.menu-acco__content{
+    background: rgba(47, 50, 52, 0.93);
+    width: 0;
+    float: left;
+    height: 100%;
+    color: white;
+    font-size: 14px;
+    line-height: 2;
+    overflow: hidden;
+}
+
+.menu-acco__text{
+    width: 480px;
+    padding:  60px 35px;
+}

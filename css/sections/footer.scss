@@ -1,0 +1,80 @@
+.footer{
+    background: url(../img/content/bg/footer.jpg) center bottom no-repeat;
+    background-size: cover;
+    height: 60px;
+    padding-top: 10px;
+
+    @extend %clearfix;
+}
+
+.footer__right,
+.footer__left {
+	float: left;
+	width: 50%;
+}
+
+.footer__right{
+	text-align: right;
+	padding-top: 10px;
+}
+
+.footer__address{
+	font-size: 14px;
+	color: white;
+}
+
+.footer__phone{
+	font-size: 14px;
+	color: $orange;
+	font-family: "ubuntubold";
+	text-decoration: none;
+}
+
+.socials{
+	position: relative;
+	top: 50%;
+}
+
+.socials__item{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 13px;
+}
+
+.socials__link{
+	display: inline-block;
+	max-width: 23px;
+	max-height: 20px;
+	opacity: .3;
+	transition: .3s;
+
+	&:hover{
+		opacity: 1;
+	}
+}
+
+.socials__icon{
+	display: inline-block;
+	width: 23px;
+	height: 20px;
+
+	&_vk{
+		background:url(../img/icons/vk.svg) 50% no-repeat;
+		background-size: contain;
+	}
+
+	&_fb{
+		background:url(../img/icons/fb.svg) 50% no-repeat;
+		background-size: contain;
+	}
+
+	&_inst{
+		background:url(../img/icons/inst.svg) 50% no-repeat;
+		background-size: contain;
+	}
+
+	&_twitter{
+		background:url(../img/icons/twitter.svg) 50% no-repeat;
+		background-size: contain;
+	}
+}

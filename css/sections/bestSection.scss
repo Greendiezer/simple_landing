@@ -1,0 +1,61 @@
+.best{
+	background: url(../img/content/bg/we_bg.jpg) 50% no-repeat;
+	background-size: cover;
+	text-align: center;
+
+}
+
+.best .container{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.sections__title_black{
+	color: $black;
+}
+
+.best__list{
+	font-size: 0;
+}
+
+.best__item{
+	display: inline-block;
+	vertical-align: top;
+	width: 33.3333%;
+	padding: 0 10px;
+}
+
+.best__icon{
+	margin-bottom: 20px;
+}
+
+.best__icon-image{
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+
+	&_meat{
+		background: url("../img/icons/meat.svg") 50% no-repeat;
+	}
+
+	&_hand{
+		background: url("../img/icons/hand.svg") 50% no-repeat;
+	}
+
+	&_natural{
+		background: url("../img/icons/natural.svg") 50% no-repeat;
+	}
+}
+
+.best__title{
+	font-family:"lifehackmedium";
+	font-size: 24px;
+	color: $black;
+	margin-bottom: 20px;
+}
+
+.best__text{
+	font-size: 14px;
+	line-height: 1.8;
+}

@@ -1,0 +1,28 @@
+$(function (){
+
+    $('.team-acco__trigger').click(function (e) { 
+        e.preventDefault();
+        
+        var $this = $(this),
+            item = $this.closest('.team-acco__item'),
+            container = $this.closest('.team-acco');
+            items = container.find('.team-acco__item'),
+            content = item.find('.team-acco__content'),
+            otherContent = container.find('.team-acco__content');
+
+            if (!item.hasClass('team-acco__item_active')){
+
+                items.removeClass('team-acco__item_active');
+                item.addClass('team-acco__item_active');
+                otherContent.slideUp();
+                content.slideDown();
+            } else {
+
+                item.removeClass('team-acco__item_active');
+                content.slideUp();
+            }
+
+
+    });
+
+});

@@ -1,0 +1,26 @@
+//colors
+$orange: #e45028;
+$yellow: #f9b43b;
+$black: #2f3234;
+$red:#e35028;
+
+//layout
+@import "layout/fonts.scss";
+@import "layout/normalize.scss";
+@import "layout/settings.scss";
+
+//Sections
+@import "sections/mainSection.scss";
+@import "sections/bestSection.scss";
+@import "sections/burgersSection.scss";
+@import "sections/teamSection.scss";
+@import "sections/menuSection.scss";
+@import "sections/feedbackSection.scss";
+@import "sections/orderSection.scss";
+@import "sections/mapSection.scss";
+@import "sections/footer.scss";
+
+//Elements
+@import "sections/fixmenu.scss";
+@import "sections/fullReview.scss";
+@import "sections/statusPopup.scss";
